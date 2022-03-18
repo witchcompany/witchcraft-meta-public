@@ -1,0 +1,255 @@
+@charset "UTF-8";
+@import './font.scss';
+@import './reset.scss';
+@import './color.scss';
+@import './icons.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Spoqa Han Sans', 'AppleSDGothicNeo' ,sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color:#fff;
+  letter-spacing: -0.6px;
+  @include font16;
+  font-family:'Spoqa Han Sans', 'AppleSDGothicNeo',sans-serif ;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul, li {
+  list-style: none;
+}
+input{
+  outline: none;
+}
+table{
+  width: 100%;
+  border-spacing: unset;
+}
+img{
+  width: 100%;
+}
+
+@mixin section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin main {
+ 
+}
+@mixin sub_title{
+  margin:25px 0;
+}
+@mixin container{
+  width:1280px;
+  margin:0 auto;
+}
+
+@mixin container__none{
+  width: $mobile;
+  @if( $mobile >= 768){
+     width:100%
+  }
+}
+
+
+// ir
+.ir_pm {
+  display: block; 
+  overflow: hidden; 
+  font-size: 0; 
+  line-height: 0; 
+  text-indent: -9999px;
+}
+.ir_wa {
+  display: block; 
+  overflow: hidden; 
+  position: relative; 
+  z-index: -1;
+  width: 100%; height: 100%;
+  }
+.ir_so {
+  overflow: hidden; 
+  position: absolute;
+  width: 0; height: 0; 
+  line-height: 0; 
+  text-indent: -9999px;
+  }
+
+
+$mobile: 375px;
+$tablet: 768px;
+$desktop: 1280px;
+
+
+
+@mixin mobile {
+  @media (max-width: #{$tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) and (max-width: #{$desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin maxDesktop {
+  @media (max-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+
+.breadcrumb {
+  a {
+    @include font14;
+    color: $gray400;
+  }
+
+  .icon {
+    @include arrow_right_12px;
+    margin: 0 8px;
+    vertical-align: middle;
+  }
+
+  .current {
+    @include font14;
+    color: #fff;
+  }
+}
+
+
+
+
+body {
+
+  @include mobile{
+    @include font14;
+  }
+}
+
+
+//sub_title
+.main{
+  @include main
+}
+
+
+#sub_title{
+  @include sub_title;
+  h2{
+      padding:2em 0 1em
+  }
+}
+.container{
+  @include container;
+}
+
+.sub_Nav{
+  display: flex;
+  li{
+      @include font14;
+      color:$gray400;
+      position: relative;
+      &:after{
+        content:url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon-subTT.svg');
+        padding:0 8px
+      }
+      &:last-child{
+        color:$gray100;
+        &:after{
+         display: none;
+        }
+      }
+  }
+
+  @media (max-width:620px) {
+    display: none;
+  }
+}
+
+#sub_tap{
+  border-bottom: 1px solid $gray700;
+}
+.sub_tabs{
+  display: flex;
+  a{
+      display: inline-block;
+      padding:0.5em 1em
+  }
+  .active{
+      border-bottom: 2px solid;
+  }
+}
+@include mobile{
+  .sub_tabs{
+      li{
+          flex:1;
+          a{
+              display: block;
+              text-align: center;
+          }
+      }
+  }
+}
+
+// @include desktop {
+//   .container {
+//     width: 95%;
+//   }
+// }
+@include tablet {
+ .container {
+    width: 95%;
+  }
+}
+@include mobile {
+  .container {
+    width: 95%;
+  }
+}
+
+@mixin flexBox($flex,$jusrify,$align) {
+  display:$flex;
+  justify-content: $jusrify;
+  align-items: $align;
+}
+
+.button_wrap{
+  @include flexBox(flex,center,center);
+  width: 100%;
+}
+.button{
+  flex:1;
+  background: $purple;
+  color:$gray100;
+  padding:1em ;
+  border:0;
+  border-radius: 40px;
+  @include font18;
+}
+.button_end{
+  background: rgba(185, 154, 236, 1);
+  color: rgba(214, 194, 249, 1);
+}
+
+

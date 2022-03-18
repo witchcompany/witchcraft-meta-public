@@ -1,0 +1,70 @@
+{
+  "name": "witchcraft-meta",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "webpack serve --config ./webpack/webpack.config.dev --hot",
+    "build:prod": "webpack --config ./webpack/webpack.config.prod",
+    "build:dev": "webpack --config ./webpack/webpack.config.dev"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.14.5",
+    "@babel/runtime": "^7.14.6",
+    "@react-keycloak/web": "^3.4.0",
+    "axios": "^0.21.1",
+    "classnames": "^2.3.1",
+    "connected-react-router": "^6.9.1",
+    "dotenv": "^10.0.0",
+    "keycloak-js": "^14.0.0",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-device-detect": "^2.1.2",
+    "react-dom": "^17.0.2",
+    "react-ga4": "^1.4.1",
+    "react-intl": "^5.20.4",
+    "react-loading-icons": "^1.0.8",
+    "react-redux": "^7.2.4",
+    "react-resize-detector": "^6.7.6",
+    "react-router-dom": "^5.2.0",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "4.0.3",
+    "react-unity-webgl": "^8.6.1",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^5.2.6",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^2.1.0",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "post-loader": "^2.0.0",
+    "postcss": "^8.3.4",
+    "prettier": "^2.3.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.39.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-middleware": "^5.0.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "description": "",
+  "main": "webpack.config.js",
+  "author": "",
+  "license": "ISC"
+}

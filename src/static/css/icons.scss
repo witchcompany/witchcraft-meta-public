@@ -1,0 +1,200 @@
+@mixin plusCircle_w_16px {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_plus_circle_white_16px.svg') no-repeat;
+  background-size: contain;
+
+  @include desktop {
+  
+  }
+}
+
+@mixin plus_18px {
+  display: inline-block;
+  width: 4.8vw;
+  height: 4.8vw;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_plus_18px.svg') no-repeat;
+  background-size: contain;
+
+  @include desktop {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@mixin minus_18px {
+  display: inline-block;
+  width: 4.8vw;
+  height: 4.8vw;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_minus_18px.svg') no-repeat;
+  background-size: contain;
+
+  @include desktop {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+// arrow
+@mixin arrow_left_w_24px {
+  display: inline-block;
+  width: 19px;
+  height:19px;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_arrow_left_white_24px.svg') no-repeat;
+  background-size: cover;
+
+}
+
+@mixin arrow_left_f_24px {
+  display: inline-block;
+  width: 6.4vw;
+  height: 6.4vw;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_arrow_left_f_24px.svg') no-repeat;
+  background-size: contain;
+
+  @include desktop {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@mixin arrow_right_12px {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_arrow_right_12px.svg') no-repeat;
+  background-size: contain;
+
+}
+
+@mixin arrow_right_f_24px {
+  display: inline-block;
+  width: 6.4vw;
+  height: 6.4vw;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_arrow_right_f_24px.svg') no-repeat;
+  background-size: contain;
+
+  @include desktop {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@mixin arrow_top_right_16px {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_arrow_top_right_16px.svg') no-repeat;
+  background-size: contain;
+
+}
+
+// logo
+@mixin logo_instagram_28px {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/logo_instagram_28px.svg') no-repeat;
+  background-size: contain;
+
+  @media (max-width:823px) {
+    width: 28px;
+    height: 28px;
+  } 
+}
+
+@mixin logo_medium_28px {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/logo_medium_28px.svg') no-repeat;
+  background-size: contain;
+
+  @media (max-width:823px) {
+    width: 28px;
+    height: 28px;
+  } 
+}
+
+@mixin logo_twitter_28px {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/logo_twitter_28px.svg') no-repeat;
+  background-size: contain;
+
+  @media (max-width:823px) {
+    width: 28px;
+    height: 28px;
+  } 
+}
+
+@mixin logo_discord_28px {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/logo_discord_28px.svg') no-repeat;
+  background-size: contain;
+
+  @media (max-width:823px) {
+    width: 28px;
+    height: 28px;
+  } 
+}
+
+
+.profilImg{
+  display: block;
+  width: 53px;
+  height: 53px;
+  margin-bottom: 8px;
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/profile.jpg')no-repeat center;
+  border-radius: 100%;
+  border:1px solid $gray200;
+}
+
+.check_icon{
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/mania_icon.png')no-repeat center;
+  background-size: contain;
+}
+
+.time_icon{
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/clock_icon.png')no-repeat center;
+  background-size: contain;
+}
+
+@mixin cancel{
+  background: url('https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon_cancle_white.svg')no-repeat center;
+}
+
+.google{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+  background: url(https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/icon-google.svg)no-repeat center;
+  background-size: cover;
+  vertical-align: sub;
+}
+
+.eth_icon{
+  width: 18px;
+  height: 20px;
+  background: url(https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/eth_icon.png)no-repeat center;
+  background-size: contain;
+}
+
+.bsc_icon{
+  width: 18px;
+  height: 20px;
+  background: url(https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/bsc_icon.png)no-repeat center;
+  background-size: contain;
+}
+
+.heco_icon{
+  width: 18px;
+  height: 20px;
+  background: url(https://wcraft.s3.ap-northeast-2.amazonaws.com/icons/heco_icon.png)no-repeat center;
+  background-size: contain;
+}

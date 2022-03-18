@@ -1,0 +1,32 @@
+body {
+  background: #000;
+}
+
+.loading {
+  width: 100%;
+  margin: 20% auto 0;
+
+  @media (max-width:600px) {
+    margin-top: 80%;
+  }
+
+  @media (max-width:823px) {
+    margin-top: 50%;
+  }
+
+  .ios {
+    margin-bottom: 2em;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.percent {
+  color: #fff;
+  text-align: center;
+}

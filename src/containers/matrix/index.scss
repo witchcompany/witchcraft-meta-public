@@ -1,0 +1,21 @@
+body {
+  background: #000;
+}
+
+.loading {
+  width: fit-content;
+  margin: 20% auto 0;
+
+  @media (max-width:823px) {
+    margin-top: 40%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.percent {
+  color: #fff;
+  text-align: center;
+}
